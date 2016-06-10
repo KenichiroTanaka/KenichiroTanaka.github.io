@@ -61,13 +61,10 @@
      <literal>(<replaceable>x2</replaceable>,<replaceable>y2</replaceable>)</literal>
      are two different points on the line.
 -->
-     <code class="literal">(<em class="replaceable"><code>x1</code></em>,<em class="replaceable"><code>y1</code></em>)</code>
-と
-     <code class="literal">(<em class="replaceable"><code>x2</code></em>,<em class="replaceable"><code>y2</code></em>)</code>
-はその直線上の2つの異なる点です。
+ここで<code class="literal">(<em class="replaceable"><code>x1</code></em>,<em class="replaceable"><code>y1</code></em>)</code>と<code class="literal">(<em class="replaceable"><code>x2</code></em>,<em class="replaceable"><code>y2</code></em>)</code>はその直線上の2つの異なる点です。
     </p></div><div class="sect2" id="datatype-lseg"><div class="titlepage"><div><div><h3 class="title">8.8.3. 線分</h3></div></div></div><!--
     <title>Line Segments</title>
---><a id="idp14868528" class="indexterm"></a><a id="idp14869168" class="indexterm"></a><p><!--
+--><a id="idp14868496" class="indexterm"></a><a id="idp14869136" class="indexterm"></a><p><!--
      Line segments are represented by pairs of points that are the endpoints
      of the segment.  Values of type <type>lseg</type> are specified using any
      of the following syntaxes:
@@ -89,9 +86,9 @@
     </p><p><!--
      Line segments are output using the first syntax.
 -->線分は1番目の構文で出力されます。
-    </p></div><div class="sect2" id="idp14881440"><div class="titlepage"><div><div><h3 class="title">8.8.4. 矩形</h3></div></div></div><!--
+    </p></div><div class="sect2" id="idp14881408"><div class="titlepage"><div><div><h3 class="title">8.8.4. 矩形</h3></div></div></div><!--
     <title>Boxes</title>
---><a id="idp14881952" class="indexterm"></a><a id="idp14882784" class="indexterm"></a><p><!--
+--><a id="idp14881920" class="indexterm"></a><a id="idp14882752" class="indexterm"></a><p><!--
      Boxes are represented by pairs of points that are opposite
      corners of the box.
      Values of type <type>box</type> are specified using any of the following
@@ -118,10 +115,10 @@
      will be reordered as needed to store the
      upper right and lower left corners, in that order.
      -->任意の対角頂点を入力として指定することができます。
-しかし頂点は右上の頂点を最初に、左下の頂点をその後に格納するよう必要に応じて並べられます。
-    </p></div><div class="sect2" id="idp14894896"><div class="titlepage"><div><div><h3 class="title">8.8.5. 経路</h3></div></div></div><!--
+しかし頂点は右上の頂点を最初に、左下の頂点をその後に格納するよう必要に応じて並べ替えられます。
+    </p></div><div class="sect2" id="idp14894864"><div class="titlepage"><div><div><h3 class="title">8.8.5. 経路</h3></div></div></div><!--
     <title>Paths</title>
---><a id="idp14895280" class="indexterm"></a><p><!--
+--><a id="idp14895248" class="indexterm"></a><p><!--
      Paths are represented by lists of connected points. Paths can be
      <firstterm>open</firstterm>, where
      the first and last points in the list are considered not connected, or
@@ -154,7 +151,7 @@
 -->経路は最初または２番目の適切な構文で出力されます。
     </p></div><div class="sect2" id="datatype-polygon"><div class="titlepage"><div><div><h3 class="title">8.8.6. 多角形(ポリゴン)</h3></div></div></div><!--
     <title>Polygons</title>
---><a id="idp14910832" class="indexterm"></a><p><!--
+--><a id="idp14910800" class="indexterm"></a><p><!--
      Polygons are represented by lists of points (the vertexes of the
      polygon). Polygons are very similar to closed paths, but are
      stored differently and have their own set of support routines.
@@ -179,7 +176,7 @@
 -->多角形は最初の構文で出力されます。
     </p></div><div class="sect2" id="datatype-circle"><div class="titlepage"><div><div><h3 class="title">8.8.7. 円</h3></div></div></div><!--
     <title>Circles</title>
---><a id="idp14921888" class="indexterm"></a><p><!--
+--><a id="idp14921856" class="indexterm"></a><p><!--
      Circles are represented by a center point and radius.
      Values of type <type>circle</type> are specified using any of the
      following syntaxes:
